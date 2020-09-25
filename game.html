@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quiz</title>
+    <meta chartset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="css/game.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="#app">
+      <header>
+        <nav class="navbar">
+          <ul class="main-nav">
+            <li><a href="/home/devel/Documents/Assig1/index.html" class="nav-links">Back to Home</a></li>
+           <!-- <li><a href="/game.html" class="nav-links">Game</a></li>
+            <li><a href="/highscores.html" class="nav-links">Highscores</a></li>
+            <li><a href="/about.html" class="nav-links">About</a></li>-->
+          </ul>
+        </nav>
+      </header>
+      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning -->
+      <main class="quiz">
+        <h1 id="h1">Here is your Quiz!!</h1>
+        <article>
+          <header>
+            <div><span>ID</span><span>21</span></div>
+            <div><span >Category: </span><span id="Api_Category"></span></div>
+            <div><span>Difficulty: </span><span id="Api_Difficulty"></span></div>
+          </header>
+          <form action="" method="get">
+            <fieldset>
+              <legend id="Api_question">
+               <!--Which of the following is a text editor that can be used in command mode to edit files on a Linux
+                //system?-->
+              </legend>
+              <div>
+                <input type="radio" name="question" id ="Api_answer_a_input"/>
+                <label id ="Api_answer_a" for=""></label>
+              </div>
+              <div>
+                <input type="radio" name="question" id ="Api_answer_b_input"/>
+                <label id ="Api_answer_b" for=""></label>
+              </div>
+              <div>
+                <input type="radio" name="question" id ="Api_answer_c_input"/>
+                <label id ="Api_answer_c" for=""></label>
+              </div>
+              <div>
+                <input type="radio" name="question" id ="Api_answer_d_input"/>
+                <label id ="Api_answer_d" for=""></label>
+              </div>
+              <div>
+                <input type="radio" name="question" id ="Api_answer_e_input"/>
+                <label id ="Api_answer_e" for=""></label>
+              </div>
+              <div>
+                <input type="radio" name="question" id ="Api_answer_f_input"/>
+                <label id ="Api_answer_f" for=""></label>
+              </div>
+            </fieldset>
+            <div id="submit_new">
+              <input id="submit_newQuestion" type="submit" value="" />
+            </div>
+          </form>
+          
+        </article>
+     
+      </main>
+      <footer></footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
