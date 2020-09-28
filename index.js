@@ -1,4 +1,7 @@
-const api_url ='https://quizapi.io/api/v1/questions?apiKey=BVxPRYUBJWp6Mv9FTqBwuZDOJuJgmkxDzf0wZtTd&limit=1'
+const api_url ='https://quizapi.io/api/v1/questions?apiKey=GxObO7zjaHw7B1769Sr3Eec3Ai6vCVle1xVtjM0t&limit=1'
+var button = document.getElementById('submit_newQuestion');
+
+
 
 async function getQuestions() {
   console.log('About to fetch API...');
@@ -23,6 +26,7 @@ async function getQuestions() {
   if ( multiple_correct_answers == "false"){
     console.log('Not a multiple_correct_answers!');
     reload_msg="Submit";
+    location.assign = 'game.html';
     document.getElementById('Api_question').textContent = question;
     document.getElementById('Api_Difficulty').textContent = difficulty;
     document.getElementById('Api_Category').textContent = category;
@@ -38,43 +42,30 @@ async function getQuestions() {
     console.log('This is a multiple_correct_answers!');
     reload_msg ="Reload a new Question!";
     document.getElementById('submit_newQuestion').value=reload_msg;
+    location.assign = '/gameMultipleChoice.html';
+    document.getElementById('Api_question').textContent = question;
+    document.getElementById('Api_Difficulty').textContent = difficulty;
+    document.getElementById('Api_Category').textContent = category;
+    document.getElementById('Api_answer_a').textContent = answersArray[0];
+    document.getElementById('Api_answer_b').textContent = answersArray[1];
+    document.getElementById('Api_answer_c').textContent = answersArray[2];
+    document.getElementById('Api_answer_d').textContent = answersArray[3];
+    document.getElementById('Api_answer_e').textContent = answersArray[4];
+    document.getElementById('Api_answer_f').textContent = answersArray[5];
+    
     
   }
   
-  /*const { latitude, longitude } = data;
-
-  marker.setLatLng([latitude, longitude]);
-  if (firstTime) {
-    mymap.setView([latitude, longitude], 2);
-    firstTime = false;
-  }
-  document.getElementById('lat').textContent = latitude.toFixed(2);
-  document.getElementById('lon').textContent = longitude.toFixed(2);*/
+  
 }
 
 
 
-
-getQuestions();
-
-
+button.onclick = getQuestions ();
+//getQuestions();
 
 
 
 
 
-/*const data = { username: 'example' };
-fetch(`https://quizapi.io/api/v1/questions?apikey=`+`3RHgosCYlQMC1nIxWAduNYkaXPKiKLriYc2TsMpr`+`&limit=1`{
-  method: 'POST', // or 'PUT'
-  headers: {
-    'Content-Type': 'application/json','
-  },
-  body: JSON.stringify(data),
-})
-.then(response => response.json())
-.then(data => {
-  console.log('Success:', data);
-})
-.catch((error) => {
-  console.error('Error:', error);
-});*/
+

@@ -3,7 +3,7 @@
   <head>
     <title>Quiz</title>
     <meta chartset="UTF-8"/>
-    <link rel="stylesheet" type="text/css" href="./css/game.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/gameMultipleChoice.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
@@ -21,6 +21,7 @@
       <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning -->
       <main class="quiz">
         <h1 id="h1">Here is your Quiz!!</h1>
+        <h2 id="h1">Multiple Choice Question</h2>
         <article>
           <header>
             <div><span>ID</span><span>21</span></div>
@@ -34,33 +35,32 @@
                 //system?-->
               </legend>
               <div>
-                <input type="radio" name="question" id ="Api_answer_a_input"/>
+                <input type="checkbox" name="question" id ="Api_answer_a_input"/>
                 <label id ="Api_answer_a" for=""></label>
               </div>
               <div>
-                <input type="radio" name="question" id ="Api_answer_b_input"/>
+                <input type="checkbox" name="question" id ="Api_answer_b_input"/>
                 <label id ="Api_answer_b" for=""></label>
               </div>
               <div>
-                <input type="radio" name="question" id ="Api_answer_c_input"/>
+                <input type="checkbox" name="question" id ="Api_answer_c_input"/>
                 <label id ="Api_answer_c" for=""></label>
               </div>
               <div>
-                <input type="radio" name="question" id ="Api_answer_d_input"/>
+                <input type="checkbox" name="question" id ="Api_answer_d_input"/>
                 <label id ="Api_answer_d" for=""></label>
               </div>
-              <!--<div>
-                <input type="radio" name="question" id ="Api_answer_e_input"/>
+              <div>
+                <input type="checkbox" name="question" id ="Api_answer_e_input"/>
                 <label id ="Api_answer_e" for=""></label>
               </div>
               <div>
-                <input type="radio" name="question" id ="Api_answer_f_input"/>
+                <input type="checkbox" name="question" id ="Api_answer_f_input"/>
                 <label id ="Api_answer_f" for=""></label>
-              </div>-->
+              </div>
             </fieldset>
             <div id="submit_new">
-              <!-- <input id="submit_newQuestion" type="submit" value="" /> -->
-              <button id="submit_newQuestion" type="submit" value=""> Submit</button> 
+              <input id="submit_newQuestion" type="submit" value="" />
             </div>
           </form>
           
