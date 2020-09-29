@@ -49,19 +49,28 @@
                 <input type="radio" name="question" id ="Api_answer_d_input"/>
                 <label id ="Api_answer_d" for=""></label>
               </div>
-              <!--<div>
+              <div>
                 <input type="radio" name="question" id ="Api_answer_e_input"/>
                 <label id ="Api_answer_e" for=""></label>
               </div>
               <div>
                 <input type="radio" name="question" id ="Api_answer_f_input"/>
                 <label id ="Api_answer_f" for=""></label>
-              </div>-->
+              </div>
             </fieldset>
             <div id="submit_new">
-              <!-- <input id="submit_newQuestion" type="submit" value="" /> -->
-              <button id="submit_newQuestion" type="submit" value=""> Submit</button> 
+              <input id="submit_newQuestion" type="submit" value="Submit Answer" />
             </div>
+          </form>
+
+          <form id="ValueForm">
+            <label for="Cat">Cat:</label>
+            <input type="text" name="Cat" value="Linux" id ="Cat"/>
+
+            <label for="Diff">Diff:</label>
+            <input type="text" name="Diff" value="easy" id="Diff"/>
+            <button type="button" onclick="getValue();">New Question!</button>
+        
           </form>
           
         </article>

@@ -42,7 +42,10 @@ body {
    align-items: center;
    flex-grow: 2;
  }
-  
+
+ #ValueForm input, label{
+   flex-wrap: wrap;
+ }
  /*.quiz article {   
     display: flex; 
     align-items: center;
